@@ -1,0 +1,18 @@
+<div class="applyleave">
+  <div>
+    <label class="col-md-2" for="leavename">Leave Type</label>
+    <input type="text" id="leavename" name="leavename" required>
+  </div><br />
+  <div>
+    <label class="col-md-2" for="noofdays">From Date</label>
+    <input type="text" id="noofdays" name="noofdays" required>
+  </div>
+  <br />
+  <div>
+    <label class="col-md-2" for="noofdays">To Date</label>
+    <input type="text" id="noofdays" name="noofdays" required>
+  </div>
+  <br />
+  <input [disabled]="!form.valid" type="button" value="Add" style="background-color: blue;" (click)='add()'>
+</div>
+

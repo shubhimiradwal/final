@@ -1,0 +1,12 @@
+<div class="addleave">
+  <div>
+    <label class="col-md-2" for="leavename">Name : </label>
+    <input type="text" id="leavename" name="leavename" required>
+  </div><br />
+  <div>
+    <label class="col-md-2" for="noofdays">Number of Days </label>
+    <input type="text" id="noofdays" name="noofdays" required>
+  </div>
+  <br/>
+  <input [disabled]="!form.valid"  type="button" value="Add" style="background-color: blue;" (click)='add()'>
+</div>

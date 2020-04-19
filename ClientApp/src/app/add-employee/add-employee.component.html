@@ -1,0 +1,30 @@
+<form (submit)="addemp()">
+  <div class="addemp">
+    <div>
+      <label class="col-md-2" for="eemail">id</label>
+      <input type="number" id="eemail" name="eemail" [(ngModel)]='employee1.employeeid' required>
+    </div>
+    <div>
+      <label class="col-md-2" for="name">Name</label>
+      <input type="text" id="name" name="ename" [(ngModel)]='employee1.employeename' required>
+    </div>
+
+    <div>
+      <label class="col-md-2" for="doj">Date Of Joining</label>
+      <input type="text" id="doj" name="edoj" [(ngModel)]='employee1.doj' required>
+    </div>
+    <div>
+      <label class="col-md-2" for="dob">Date Of Birth</label>
+      <input type="text" id="dob" name="edob" [(ngModel)]='employee1.dob' required>
+    </div>
+    <div>
+      <label class="col-md-2" for="salary">Salary</label>
+      <input type="number" id="salary" name="edob" [(ngModel)]='employee1.salary' required>
+    </div>
+    <div>
+      <label class="col-md-2" for="email">Email</label>
+      <input type="text" id="email" name="edob" [(ngModel)]='employee1.email' required>
+    </div>
+    <input type="submit" value="Add" style="background-color: darkblue;">
+  </div>
+  </form>

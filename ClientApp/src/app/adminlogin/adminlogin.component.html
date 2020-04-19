@@ -1,0 +1,14 @@
+<div class="admin_login">
+  <h3>Admin login</h3>
+  <br/>
+<form (submit)="adminlogin()">
+    <div>
+      <label for="email">Email address</label><br/>
+      <input type="email" name="email" [(ngModel)]='email' required >
+    </div>
+  <br/>
+    <button type="submit" style="background-color: darkblue">Login</button>
+  </form>
+</div>
+
+
